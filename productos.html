@@ -1,286 +1,97 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="imagen/vinilo-logo.webp" type="image/x-icon">
-  <!-- CSS de Bootstrap -->
-  <link rel="stylesheet" href="CSS/productos.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-  <title>Tienda</title>
-
-
-
-  <!-- Darle color a las letras de la barra de navegacion-->
-  <style>
-    .navbar .nav-link {
-      color: #000000 !important;
-    }
-  </style>
-
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagen/vinilo-logo.webp" type="image/x-icon">
+    
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <title> Página Principal </title>
 </head>
 
 <body>
-
-  <!-- Este de aqui abajo se encarga de darle color al Background sin necesidad de un .css-->
-  <div class="bg-light">
-
-
-
-
-
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block bg-light" style="z-index: 2000;">
-      <div class="container-fluid">
-        <!-- Navbar brand -->
-        <a class="navbar-brand nav-link" target="_blank" href="#kuchau">
-          <img src="imagen/vinilo-logo.webp" alt="Logo vinillo" width="60" height="60" class="d-inline-block align-top">
-          <strong>Tienda Nombre</strong>
-        </a>
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
-          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarExample01">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="Productos.html">Productos</a>
-            </li>
-          </ul>
-          </ul>
-        </div>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Ej. Sonne" aria-label="Search">
-          <button class="btn btn-outline-info" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
-    <!-- Navbar -->
-
-
-
-
-
-    <!-- Albums -->
-    <h1 class="text-center my-5">Productos de la Tienda</h1>
-
-    <div class="row mx-5">
-
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="imagen/weeknd.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h6> The Weeknd</h6>
-            <h5 class="card-title">Album Save Your Tears</h5>
-            <div class="disponible">
-              <h6> Ultimas Unidades </h6>
+    <div class="container">
+        <input type="checkbox" id="flip">
+        <div class="cover">
+            <div class="front">
+                <img src="imagen/collage.jpg" alt="">
             </div>
-            <h6>$9.990 c/u</h6>
-            <p class="card-text">Disponibles: 10 </p>
-            <a href="#" class="btn btn-primary">Agregar al carro</a>
-          </div>
+            <div class="backImg" src="imagen/collage.jpg" alt="">
+            </div>
         </div>
-      </div>
+        <div class="forms">
+            <div class="form-content">
+                <div class="login-form">
+                    <div class="title"> Iniciar Sesion </div>
+                    <form action="index2.html">
+                        <div class="input-boxes">
+                            <div class="input-box">
+                                <i class="fas fa-envelope"></i>
+                                <input type="text" placeholder="Introduce tu email" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Introduce tu contraseña" required>
+                            </div>
+                            <div class="text"> <a href="#">¿Olvidaste tu contraseña?</a></div>
+                            <div class="button input-box">
+                                <input type="submit" value="Iniciar Sesion">
+                            </div>
+                            <div class="text sign-up-text"> ¿No tienes cuenta? <label for="flip"> Registrate ahora </label></div>
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="signup-form">
+                    <div class="title"> Registrarse </div>
+                    <form action="#">
+                        <div class="input-boxes">
+                            <div class="input-box">
+                                <i class="fas fa-user" ></i>
+                                <input type="text" placeholder="Introduce tu nombre" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-envelope" ></i>
+                                <input type="text" placeholder="Introduce tu email" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-lock" ></i>
+                                <input type="password" placeholder="Introduce tu contraseña" required>
+                            </div>
+                                    
+                            
+                    <!-- Button con el que llamaremos al modal gracias al data-->
+					<div class="button input-box">
+                        <input type="submit" value="Registrarse" data-toggle="modal" data-target="#formularioenvio">
+                    </div>
 
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="imagen/christian_castro.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h6>Christian Castro</h6>
-            <h5 class="card-title">Album Volver a Amar</h5>
-            <div class="disponible">
-              <h6>Disponible</h6>
+
+                            <div class="text sign-up-text"> ¿Tienes una cuenta? <label for="flip"> Inicia Sesion</label> </div>
+                        </div>
+                    </form>   
+                </div>
             </div>
-            <h6>$8.990 c/u</h6>
-            <p class="card-text">Disponibles: 20 </p>
-            <a href="#" class="btn btn-primary">Agregar al carro</a>
-          </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="imagen/fly_me_to_the_moon.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h6>Joytastic Sarah</h6>
-            <h5 class="card-title">Album Fly Me To The Moon</h5>
-            <div class="disponible">
-              <h6> Ultimas unidades </h6>
-            </div>
-            <h6>$6.990 c/u</h6>
-            <p class="card-text">Disponibles: 5 </p>
-            <a href="#" class="btn btn-primary">Agregar al carro</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="imagen/images.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h6>Rammstein</h6>
-            <h5 class="card-title">Album de Sonne</h5>
-            <div class="disponible">
-              <h6>Disponible</h6>
-            </div>
-            <h6>$10.990 c/u</h6>
-            <p class="card-text">Disponibles: 30 </p>
-            <a href="#" class="btn btn-primary">Agregar al carro</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="imagen/jonghyun.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h6>Kim Jonghyun</h6>
-            <h5 class="card-title">Album Let Me Out</h5>
-            <div class="disponible">
-              <h6>Disponible</h6>
-            </div>
-            <h6>$16.990 c/u</h6>
-            <p class="card-text">Disponibles: 25 </p>
-            <a href="#" class="btn btn-primary">Agregar al carro</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="imagen/producto2.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h6> Madonna </h6>
-            <h5 class="card-title">Album Hanky Panky</h5>
-            <div class="disponible">
-              <h6>Disponible</h6>
-            </div>
-            <h6>$19.990 c/u</h6>
-            <p class="card-text">Disponibles: 34 </p>
-            <a href="#" class="btn btn-primary">Agregar al carro</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="imagen/Lilium.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h6>Elfen Lied</h6>
-            <h5 class="card-title">Album Lilium</h5>
-            <div class="disponible">
-              <h6>Disponible</h6>
-            </div>
-            <h6>$5.990 c/u</h6>
-            <p class="card-text">Disponibles: 18 </p>
-            <a href="#" class="btn btn-primary">Agregar al carro</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="imagen/santa_feria_algun_dia.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h6> Santa Feria</h6>
-            <h5 class="card-title">Album Algun dia</h5>
-            <div class="disponible">
-              <h6> Ultimas unidades</h6>
-            </div>
-            <h6>$9.990 c/u</h6>
-            <p class="card-text">Disponibles: 4 </p>
-            <a href="#" class="btn btn-primary">Agregar al carro</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="imagen/reik.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h6> Reik </h6>
-            <h5 class="card-title">Album Ciego</h5>
-            <div class="disponible">
-              <h6>Disponible</h6>
-            </div>
-            <h6>$8.990 c/u</h6>
-            <p class="card-text">Disponibles: 30 </p>
-            <a href="#" class="btn btn-primary">Agregar al carro</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="imagen/rosas.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h6> La Oreja de Van Gogh</h6>
-            <h5 class="card-title">Album Rosas</h5>
-            <div class="disponible">
-              <h6>Disponible</h6>
-            </div>
-            <h6>$14.990 c/u</h6>
-            <p class="card-text">Disponibles: 30 </p>
-            <a href="#" class="btn btn-primary">Agregar al carro</a>
-          </div>
-        </div>
-      </div>
+
+
+
+
+
+
+
+
+
+
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-
-
-
-
-  </div>
-
-
-
-
-
+    <!-- Sin esto no abre el modal xd-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+    
 
 </body>
-<!-- Pie de página -->
-<footer class="footer mt-auto py-3 bg-light">
-  <div class="container">
-    <span class="text-muted">© 2023 Tienda de Albums "NOMBRE DE LA TIENDA" S.A. Todos los derechos reservados.</span>
-    <li>
-      <a class="link" href="terminos-condicioes.html">Terminos y Condiciones</a>
-    </li>
-  </div>
-</footer>
-
 </html>
