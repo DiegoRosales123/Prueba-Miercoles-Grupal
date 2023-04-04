@@ -10,7 +10,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: red;
+    background: lightseagreen;
     padding: 30px;
 }
 
@@ -60,7 +60,7 @@ body{
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: #ff7676;
+    background-color: #bceeff;
     opacity: 0.5;
     z-index: 12;
 }
@@ -133,7 +133,7 @@ body{
     bottom: 0;
     height: 3px;
     width: 25px;
-    background-color: #ff7676;
+    background-color: #bceeff;
 
 }
 
@@ -168,12 +168,12 @@ body{
 
 .form-content .input-box input:focus,
 .form-content .input-box input:valid{
-    border: #ff7676;
+    border: #bceeff;
 }
 
 .form-content .input-box i{
     position: absolute;
-    color: #ff7676;
+    color: #bceeff;
     font-size: 17px;
 }
 
@@ -198,7 +198,7 @@ body{
 
 .forms .form-content .button input{
     color: #fff;
-    background: red;
+    background: teal;
     border-radius: 6px;
     padding: 0;
     cursor: pointer;
@@ -206,11 +206,11 @@ body{
 }
 
 .forms .form-content .button input:hover{
-    background: #ff7676;
+    background: #bceeff;
 }
 
 .forms .form-content label{
-    color: #ff7676;
+    color: teal;
     cursor: pointer;
 }
 
